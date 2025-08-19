@@ -1,0 +1,20 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/functions';
+  
+
+input{
+    color: $liBackgroundColorHoverSecondary;
+    background-color:$background-color-for-input-secondary ;
+    &:hover{
+        background-color: $liBackgroundColorHoverPrimary;
+        color: $liBackgroundColorHoverSecondary;
+    }
+}
+  input:focus::placeholder {
+    top: -10px!important; 
+    font-size: 10px!important; 
+    color: $liBackgroundColorHoverSecondary!important;
+    border: none!important;
+    box-shadow: 0 3px 3px 3px $background-color-for-input-secondary;
+  }

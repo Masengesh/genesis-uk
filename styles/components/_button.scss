@@ -1,0 +1,36 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/functions';
+button{
+    width: 16rem;
+    height: 5rem;
+    background: transparent;
+    border-radius: 1rem;
+    border-color: $button-text-color-primary;
+    color: $button-text-color-primary;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-table;
+    z-index: 2;
+    transition: all ease 1s;
+    position: relative;
+}
+button:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $button-text-color-primary;
+    color: $background-color-second;
+    border-radius: 1rem;
+    z-index: -1;
+    transition: all ease 1s;
+} 
+button:hover:before{
+    width: 100%;
+} 
+button:hover{
+    color: $background-color-second;
+} 

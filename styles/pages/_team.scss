@@ -1,0 +1,107 @@
+@import '../utils/variables';
+@import '../utils/functions';
+@import '../utils/mixins';
+.team{
+    &__home{
+        display: flex;
+        justify-content: space-around;
+        background-color: pink;
+        padding-top: 3rem;
+        background-color: $background-color-primary;
+        img{
+            height: 7rem;
+            width:9rem ;
+            margin-left: 5rem;
+        }
+        ul{
+            font-family: Helvetica;
+            font-size: 25px;
+            margin-left: 30rem;
+        
+        }
+        a{
+            text-decoration: none;
+            margin-right: 3rem;
+            color:$text-color-primary;
+            font-weight: 300;
+            
+        }
+    }
+    &__group{
+        text-align: center;
+        background-color: pink;
+        margin-top: -2rem;
+        padding-bottom: 7rem;
+        background-color: $background-color-primary;
+        h1{
+            font-size: 3rem;
+            font-family: Helvetica; 
+            padding-top: 3rem;
+        }
+        p{
+            font-family:  Helvetica;
+            font-size: 3rem;
+            letter-spacing: 1px;
+            font-weight: 100;
+            margin-top: 6rem;
+        }
+    }
+    &__workers{
+        background-color:$background-color-second ;
+        color: $text-color-second;
+        font-family: Helvetica;
+        margin-top: -5rem;
+        &__departement{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 5rem;
+            padding-top: 13rem;
+        }
+        img{
+           height: 400px; 
+           width: 300px;
+           object-fit: cover;
+        }
+        h1{
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          //align-items: center;
+          margin-bottom: 2rem;
+          font-size: 2.5rem;
+          height: 7rem;
+        }
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 10rem;
+            height: 5rem;
+        }
+    }
+    &__pictures{
+        @include displayFlexCenter;
+        flex-direction: column;
+        background-color:$background-color-primary ;
+        margin-top: -5rem;
+        padding-top: 20rem;
+
+        &__sign{
+            img{
+                height: 13rem;
+                object-fit: cover;
+            }
+        }
+        &__wall{
+            width: 100%;
+            padding-top: 2rem;
+            img{
+                width: 100%;
+                height: 85rem;
+                object-fit: cover;
+            }
+        }
+    }
+}
+   

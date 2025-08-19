@@ -1,0 +1,52 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/functions';
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+        width: 100%;
+        top: 5px;
+        background-color: $background-color-primary;
+        .logo{
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            //margin-top: 3%;
+            img{
+                height: 110px;
+                margin-left: 60px;
+            }
+        }
+        .menu {
+            ul {
+                display: flex;
+                margin-right: 60px;
+                font-size: 25px;
+                gap: 50px;
+                a {
+                    position: relative;
+                    color: $liBackgroundColorHoverSecondary;
+                    text-decoration: none!important;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $liBackgroundColorHoverSecondary;
+                        bottom: 0;
+                        left: 0;
+                        transform: scaleX(0);
+                        transform-origin: bottom left;
+                        transition: transform 0.3s ease !important;
+                        }
+        
+                    &:hover::after {
+                        transform: scaleX(1)!important;
+                    }
+                }
+            }
+        }
+    }

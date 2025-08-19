@@ -1,0 +1,407 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/functions';
+
+.home{
+
+    .top{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100dvh;
+        margin: 0;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 150px;
+            width: 100%;
+            top: 5px;
+            background-color: $background-color-primary;
+            .logo{
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                //margin-top: 3%;
+                img{
+                    height: 110px;
+                    margin-left: 60px;
+                }
+            }
+            .menu {
+                ul {
+                    display: flex;
+                    margin-right: 60px;
+                    font-size: 25px;
+                    gap: 50px;
+                    a {
+                        position: relative;
+                        color: $liBackgroundColorHoverSecondary;
+                        text-decoration: none!important;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            background-color: $liBackgroundColorHoverSecondary;
+                            bottom: 0;
+                            left: 0;
+                            transform: scaleX(0);
+                            transform-origin: bottom left;
+                            transition: transform 0.3s ease !important;
+                            }
+            
+                        &:hover::after {
+                            transform: scaleX(1)!important;
+                        }
+                    }
+                }
+            }
+        }
+        .title-image{
+            display: flex;
+                height: 0;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                position: relative;
+                bottom: 18rem;
+                left: 2rem;
+                padding-right: 50%;
+                z-index: 999;
+            h1{
+                display: flex;
+                color: $text-color-second;
+                text-align: center;
+                position: relative;
+                bottom: 4rem;
+                font-weight: bold;
+                font-size: 4rem;
+            }
+            p{
+                display: flex;
+                font-weight: bold;
+                font-size: 2rem;
+                text-align: center;
+                color: $text-color-second;
+                position: relative;
+                bottom: 2rem;
+            }
+            
+                button{
+                    background: $button-background-color-primary; 
+                    border: none;
+                    color: $button-text-color-primary;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    padding: 2.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bolder;
+                    font-size: 1.4rem;
+                    
+                }
+        }
+        .intro{
+            background: url(https://res.cloudinary.com/dhxqidnfl/image/upload/v1705882433/young-woman-attending-group-therapy-looking-camera_qziqef.jpg);
+            background-size: cover;
+            background-position: center;
+            flex-direction: column;
+            display: flex;
+            height: fit-content;
+            margin: 0; 
+            height: 100%;
+            .bigmage{
+                background-color: black;
+                height: 100%;
+                opacity: 0.3;
+            }  
+        }
+        .cards{
+            width: 100%;
+            height: 513px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            background-color: $background-color-primary;
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 24%;
+                height: 96%;
+                h2{
+                    font-weight: bold;
+                }
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+                &:hover{
+                    box-shadow: 0 3px 3px 3px $background-color-for-input-secondary;
+
+                }
+            }
+        }
+        .activities{
+            background: $background-color-second;
+            color: $button-text-color-primary;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            height: 900px;
+            h2{
+                font-size: 30px;
+                padding-top: 40px;
+            }
+            p{
+                font-size: 25px;
+                padding-top: 30px;
+            }
+            .cards2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 3%;
+                height: fit-content;
+                .card2{
+                    width: 300px;
+                    height: 300px;
+                    gap: 8px;
+                    padding-top: 40px;
+                    img{
+                        width: 300px;
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                    h3{
+                        font-size: 30px;
+                        height: 7rem;
+                        padding: 10px 0;
+                    }
+                    p{
+                        font-size: medium;
+                        height: 5rem;
+                        padding: 1rem 0;
+                    }
+                    button{
+                        margin-top: 2rem;
+                    }
+                  
+                }
+            }
+        }
+    }
+    .program{
+        &__reconciliation{
+            width: 100%;
+            background-color: $background-color-tertiairy;
+            display: flex;
+            &__image{
+                width: 60%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+            &__text{
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                padding: 2rem;
+                h1,h3{
+                    text-align: center;
+                    font-weight: bold;
+                }
+                h1{
+                    font-size: 2rem;
+                }
+
+                button{
+                    @include buttonbig;
+                    color: $button-text-color-primary;
+                    background: transparent;
+                    border: 1px solid $button-text-color-primary;
+                    border-radius: 1rem;
+                    font-weight: bold;
+                }
+             
+                button:before{
+                    background-color: $button-text-color-primary;
+                    color: $background-color-tertiairy;
+                }
+                button:hover{
+                    color: $background-color-tertiairy;
+                }
+            }
+        }
+        
+    }
+  .testimonial{
+    
+        .main{
+            background-color: $background-color-second;
+            &__header{
+                height: 15rem;
+                h1{
+                    @include displayFlexCenter;
+                    padding: 4rem;
+                    color: $text-color-second;
+                    font-weight: bold;
+                    font-size: 2rem;
+                }
+            }
+            .liatestimons{
+                display: flex;
+                justify-content: space-evenly;
+                &__image{
+                    display: grid;
+                    gap: 2rem;
+                    font-weight: 400;
+                    font-style: italic;
+                    padding: 1rem;
+                    color: $text-color-second;
+                    &__single{
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+                        img{
+                            width: 4.5rem;
+                            height: 5rem;
+                            border-radius: 100%;
+                        }
+                    }
+                    &:hover{
+                        background-color: $background-color-primary;
+                        color: $button-background-color-primary;
+                        border-radius: 1rem;
+                        box-shadow: 0 1px 1px 1px $background-color-for-input-secondary;
+                    }
+                        
+                }
+                
+            }
+            &__team{
+                width: 100%;
+                height: 58rem;
+                padding-top: 18rem;
+                display: flex;
+                background-color: $background-color-primary;
+                &__description{
+                    color: $text-color-primary;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    display: grid;
+                    width: 55%;
+                    h3{
+                        font-weight: 800;
+                    }
+                    h2{
+                        font-weight: 800;
+                        position: relative;
+                        top: 15px;
+                    }
+                    button{
+                        width: 12rem;
+                        height: 4rem;
+                        background: $button-background-color-primary;
+                        border: none;
+                        border-radius: 0.7rem;
+                        position: relative;
+                        left: 5rem;
+                        font-size: 1rem;
+                        font-weight: 600;
+                    }
+                    img{
+                        width: 9rem;
+                        position: relative;
+                        left: 30%;
+                    }
+                }
+                &__image{
+                    width: 45%;
+                    img{
+                        width: 100%;
+                        height: 85%;
+                        object-fit: cover;
+                        padding-top: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .mission{
+        &-frist{
+            @include displayFlexCenter;
+            background-color:$background-color-primary;
+            padding-bottom: 6rem;
+            flex-direction: column;
+            text-align: center;
+            h1{
+                text-align: center;
+                font-size: 3.3rem;
+                font-family: Arial;
+            }
+            p{
+                text-align: center;
+                font-size: 3.3rem;
+                font-family:  Helvetica;
+                font-weight: 100;
+                letter-spacing: 1px;
+                padding: 2rem 0;
+            }
+            button{
+                @include buttonbig;
+                border-radius: 1px;
+                font-weight: 600;
+                border-radius: 1rem;
+                color:$background-color-primary ;
+                background-color:$background-color-second;
+                border-color:transparent;
+                &:hover{
+                    color: $text-color-second;
+                }
+            }
+             
+        }
+        &-second{
+            img{
+                width:100%;
+                height: 48rem;
+                object-fit: cover;
+            }
+        } 
+    }
+}
+@mixin mobile{
+    @media only screen and (mix-width: 670px){
+        @content;
+       .program{
+            &__reconciliation{
+                width: 100rem;
+                display: flex;
+                flex-direction: column !important;
+                padding-left: 14rem;
+                
+            }
+
+            &__social{
+                &__explore{
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}

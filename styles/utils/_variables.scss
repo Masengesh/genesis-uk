@@ -1,0 +1,171 @@
+/*============================================== Background =============================================*/
+$background-color-primary: #FFFFFF;
+$background-color-second: #007DFF;
+$background-color-tertiairy: #D09C32;
+$background-color-firth: transparent;
+
+/*============================================== Cover Filter =============================================*/ 
+$background-color-cover: rgba(0, 0, 0, 0.4);
+
+/*============================================== Input Background =============================================*/ 
+$background-color-for-input-primary: rgba(217, 217, 217, 0.5);
+$background-color-for-input-secondary: #D9D9D9;
+
+/*============================================== Error color =============================================*/
+$background-light-error-color: #e69887;
+$background-error-color: #e63a14;
+$background-error-input: rgba(255, 0, 0, 0.031);
+$text-error-color: #FFFFFF;
+$text-error-color-secondary: #e63a14;
+
+
+/*=========================================== Success color ==============================================*/
+$background-light-success-color: #c1ff1c;
+$background-success-color: #78d23d;
+$text-success-color: #3aa346;
+$text-success-color-secondary: #007042;
+
+/*================================================ Navbar ===============================================*/
+$navbar-backgound-color-primary: #FFFFFF;
+$navbar-link-color-primary: #000000;
+$navbar-link-font-size: 25px; 
+
+/*============================================== Text Color ==============================================*/
+$text-color-primary: #000000;
+$text-color-second: #FFFFFF;
+$text-background-color: rgba(0, 0, 0, 0.3);
+$text-size-big: 50px;
+
+/*================================================ Button ================================================*/
+$button-background-color-primary: #007DFF;
+$button-text-color-primary: #FFFFFF;
+$button-background-color-second: transparent;
+$button-text-color-second: #FFFFFF;
+$button-border-color-second: #FFFFFF;
+$button-background-color-tertiairy: #FFFFFF;
+$button-text-color-tertiairy: #007DFF;
+$button-font-size-big: 25px;
+$button-font-size-small: 16px;
+
+/*============================================== input Color ==============================================*/
+$input-background-color-primary: rgba(217, 217, 217, 0.5);
+$input-background-color-secondary: #D9D9D9;
+$input-color-primary: #000000;
+
+/*================================================ Card ================================================*/
+$card-background-color-primary: #007DFF;
+$card-text-color-primary: #FFFFFF;
+$card-border-color-primary: #FFFFFF;
+$card-text-color-second: #007DFF;
+$card-border-color-second: #007DFF;
+$card-background-color-tertiairy: #FFFFFF;
+$card-text-color-tertiairy: #007DFF;
+$card-font-size-title-big: 25px;
+$card-font-size-title-middle: 20px;
+$card-font-size-text-small: 16px;
+
+/*============================================== Form ================================================*/
+$card-background-color-primary: #007DFF;
+$card-text-color-primary: #FFFFFF;
+$card-border-color-primary: #FFFFFF;
+$card-text-color-second: #007DFF;
+$card-border-color-second: #007DFF;
+$card-background-color-tertiairy: #FFFFFF;
+$card-text-color-tertiairy: #007DFF;
+$card-font-size-title: 30px;
+$card-font-size-text: 16px;
+$card-font-size-text-small: 16px;
+
+/*============================================== Link ================================================*/
+$link-font-size-small: 16px;
+
+/*================================================= Shadow ================================================*/
+$shadow-1: rgba(99, 99, 99, .2) 0 2px 8px 0;
+$shadow-2: rgba(99, 99, 99, .1) 0 0 4px 0;
+
+/*================================================= Border ================================================*/
+
+
+/*============================================= On hover ============================================*/
+/* Navbar & Footer */
+$navbar-link-border-bottom-color-on-hover: #000000;
+$footer-link-border-bottom-color-on-hover: #FFFFFF;
+
+/* Input */
+$background-color-for-input-primary-on-hover: #F2F2F2;
+$background-color-for-input-secondary: #D9D9D9;
+
+/* Button */
+$button-background-color-primary-on-hover: #FFFFFF;
+$button-text-color-primary-on-hover: #007DFF;
+$button-border-color-primary-on-hover: #007DFF;
+$button-background-color-second-on-hover: transparent;
+$button-text-color-second-on-hover: #FFFFFF;
+$button-border-color-second-on-hover: #FFFFFF;
+$button-background-color-tertiairy-on-hover: #007DFF;
+$button-text-color-tertiairy-on-hover: #FFFFFF;
+$button-border-color-tertiairy-on-hover: #FFFFFF;
+
+/*============================================= Active ============================================*/
+/* Input */
+$background-color-for-input-primary-on-active: #FFFFFF;
+
+/*================================================= li ================================================*/
+$liBackgroundColorHoverPrimary: #FFFFFF;
+$liBackgroundColorHoverSecondary: #000000;
+$liBackgroundColorHoverTertiary: #ccc;
+
+/*================================================= menu ================================================*/
+$menuBackgroundColorHoverPrimary: #FFFFFF;
+$menuBackgroundColorHoverSecondary: #000000;
+$menuBackgroundColorHoverTertiary: #ccc;
+
+/*================================================= search ================================================*/
+$searchBackgroundColorHoverPrimary: #FFFFFF;
+$searchBackgroundColorHoverSecondary: transparent;
+$searchBackgroundColorHoverTertiary: #eeeeeebc;
+
+/*============================================== Price color =============================================*/
+$priceColorPrimary: red;
+$priceColorHoverSecondary: black;
+
+/*============================================ Table Background ===========================================*/
+$background-table-color-primary: #FFBD5A;
+$background-table-color-second: #9D7A64;
+$background-table-tertiairy: #E9E7E8;
+$background-table-fourth: #F2F2F2;
+
+/*============================================ Discount color ===========================================*/
+$discount-price-color-primary: #FFBD5A;
+$discount-price-color-secondary: #E9E7E8;
+
+/*============================================ Processing color ===========================================*/
+$not_processed: #e3503e;
+$processing: #54b7d3;
+$dispatched: #1e91cf;
+$cancelled: #e3d4d4;
+$completed: #4cb64c;
+
+/*============================================ Cubic Bezier ===========================================*/
+$cubic-bezier: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
+
+h1{
+    //color: $text-color-tertiairy;
+    a{
+        background-color: $background-color-primary;
+    }
+}
+
+/* @include mobile() {
+    .title{
+        background-color: $background-color-primary;
+        display: none;
+    }
+}  */
+
+/*================================================= sidebar ================================================*/
+$background-sidebar-color-primary: #fe4a3f;
+$background-sidebar-color-second: #ffb51f;
+$background-sidebar-color-tertiairy: #4fea32;

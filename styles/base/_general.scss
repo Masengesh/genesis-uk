@@ -1,0 +1,92 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/functions';
+
+
+.media{
+    width: 2rem;
+}
+.sucess{
+    color: $background-color-second;
+}
+.error{
+    color: $text-error-color-secondary;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    &:before, 
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: "Montserrat", Roboto, Ubuntu, Canela, Poppins, Pathway-Extreme, -apple-system, Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont, Oxygen-Sans, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", Roboto, Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "Ubuntu", Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+.link{
+    color: $text-color-second !important; 
+}
+.link {
+    position: relative;
+    text-decoration: none; 
+    color: $text-color-second; 
+  }
+  
+  .link::before {
+    content: '';
+    position: absolute;
+    bottom: 3px; 
+    left: 0;
+    right: 0;
+    height: 3px; 
+    background-color: $text-color-second; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+  }
+  
+  .link:hover::before {
+    transform: scaleX(1); 
+  }
+
+  .spinner-wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $text-color-second;
+    z-index: 1000;
+    img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 100px;
+        width: 100px;
+        margin: 0px auto;
+    }
+  }
+  
+
+

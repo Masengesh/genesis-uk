@@ -1,0 +1,134 @@
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/functions';
+
+.mission{
+    &-thrid{
+        background-color: $background-color-second;
+        margin-top: -1rem;
+        padding-top: 2rem;
+        color: $background-color-primary;
+        font-family:Helvetica;
+        &-terms{
+            display: flex;
+            justify-content: space-around;
+            &-logo{
+                margin-top: 6rem;
+                width: 15rem;
+                height: 16rem;
+                background: $background-color-primary;
+                &-symbole{
+                    img{
+                        width: 14rem;
+                        padding-left: 1rem;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                    }
+                }
+                &-page{
+                    background-color: $background-color-primary;
+                    display: flex;
+                    justify-content: space-around;
+                    img{
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                }
+            }
+            &-navigation{
+                position: relative;
+                left: 5rem;
+                top: 4rem;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    line-height: 3rem;
+                    color:$background-color-primary;
+                    text-decoration: none;
+                    a{
+                        font-size: inherit;
+                        font-weight: bold;
+                        padding: 0.4rem 0;
+                    }
+                }
+            }
+            &-contact{
+                display: flex;
+                flex-direction: column;
+                letter-spacing: 1px;
+                text-align: center;
+                line-height: 2rem;
+                .links{
+                    color: $text-color-second;
+                    padding: 0.4rem;
+                }
+                h1,p{
+                    padding: 0.4rem;
+                }
+                .adres{
+                    padding-bottom: 1rem;
+                }
+                input{
+                    height: 2.5rem;
+                    width: 21rem;
+                    text-align: center;
+                    border-color: transparent;
+                    font-size: 1rem;
+                    color: $liBackgroundColorHoverSecondary;
+                    background-color:$background-color-for-input-secondary ;
+                    &:hover{
+                        background-color: $liBackgroundColorHoverPrimary;
+                        color: $liBackgroundColorHoverSecondary;
+                    }
+                }
+                button{
+                    height: 3rem;
+                    width: 12rem;
+                    border-radius: 1rem;
+                    background-color:$background-color-primary;
+                    color:$background-color-second ;
+                    border-color: transparent;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding-top: 0.5rem;
+                }
+                &-name{
+                    margin-bottom: 1rem;
+                }
+                &-email{
+                    margin-bottom: 1rem;
+                }
+                &-number{
+                    margin-bottom: 1rem;
+                }
+                &-message{
+                    margin-bottom: 1rem;
+                    input{
+                        height: 6rem;
+                        width: 21rem;
+                        text-align: start; 
+                        padding-bottom: 2.5rem;
+                        padding-left: 0.5rem;
+                    }
+                    
+                }
+            }
+                
+        
+        }
+        &-policy{
+            display: flex;
+            gap: 2rem;
+            margin-left: 5rem;
+            padding-bottom: 2rem;
+            position: relative;
+            bottom: 1.5rem;
+            a{
+                text-decoration: none;
+                font-size: inherit;
+                font-weight: bold;
+            }
+        }
+    }
+}

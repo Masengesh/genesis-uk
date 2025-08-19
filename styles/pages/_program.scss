@@ -1,0 +1,344 @@
+@import '../utils/variables';
+@import '../utils/functions';
+@import '../utils/mixins';
+.program{
+    .pro-top{
+        @include displayFlexCenter;
+        flex-direction: column;
+        padding: 3rem;
+        background-color: $background-color-primary;
+        color: $text-color-primary;
+        p,h1{
+            font-size: 2rem;
+            padding: 2rem;
+            text-align: center;
+        }
+    }
+}
+.common{
+    .yellow{
+        background-color: $background-color-tertiairy!important;
+    }
+    &__depression{
+        background-color: $background-color-primary;
+        font-family: Helvetica;
+        padding-top: 20rem;
+
+        #depression{
+            text-align: center;
+            font-size: 3rem;
+            letter-spacing: 1px;
+        }
+        p{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 400;
+            padding-top: 2rem;
+        }
+        &__help{
+            display: flex;
+            justify-content: space-between;
+            img{
+              width:50% ;
+              height:50rem ;
+              object-fit: cover;
+              padding-top: 5rem;
+            }
+            &__writtern{
+                p{
+                    font-size: 1.9rem;
+                }
+            }
+        }
+        &__pragraph{
+           p{
+              font-size: 1.9rem;
+           }
+        }
+    }
+    &__anxiete{
+        font-family: Helvetica;
+        background-color:$background-color-second ;
+        color: $text-color-second;
+        margin-top: -2rem;
+        padding-top: 20rem;
+        #anxiety{
+            text-align: center;
+            font-size: 3rem;
+            letter-spacing: 1px;
+        }
+        h2{
+           text-align: center; 
+           font-size: 3rem;
+           font-weight: 100;  
+        }
+        h4{
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 100;
+        }
+        &__companents{
+            display: flex;
+            justify-content: space-between;
+            img{
+                height:80rem ;
+                width: 55rem;
+                object-fit: cover;
+                padding-top:6rem;
+            }
+          h3{
+            font-size: 2rem;
+            padding-left: 3rem;
+            padding-top: 4rem;
+          }
+          p{
+            font-size: 1.9rem;
+            font-weight: 100;
+            padding-left: 3rem;
+          }
+        }
+        &__phobia{
+            p{
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 100;
+                padding-top: 8rem;
+            }
+        }
+    }
+    &__negative{
+        font-family: Helvetica;
+        padding-top: 20rem;
+        #shadow{
+            text-align: center;
+            font-size: 3rem;
+        }
+        h2{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 100;
+        }
+        h4{
+            text-align: center;
+            font-size: 1.9rem;
+            font-weight: 100;
+        }
+        &__positive{
+            display: flex;
+            justify-content:space-between;
+            img{
+                 width:50% ;
+                 height:60rem ;
+                 padding-top: 8rem;
+                 object-fit: cover;
+            }
+            &__thinking{
+                font-size: 2rem;
+                h3{
+                    margin-top: 2rem;
+                }
+                p{
+                    font-weight: 100;
+                }
+            }  
+                
+        }
+        &__join{
+            h1{
+                text-align: center;
+                font-size: 2rem;
+            }
+            p{
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 100;
+            }
+            img{
+                width: 100%;
+                height: 60rem;
+                object-fit: cover;
+            }
+        }
+       
+    }
+    .health{
+        font-family: Helvetica;
+        background-color: $background-color-tertiairy;
+        padding-top: 20rem;
+        #seeking{
+            text-align: center;
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 3rem;
+            font-weight: 100;
+            text-align: center;
+            letter-spacing: 1px;
+            font-weight: 100;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+    
+        }
+        h4{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 100;
+    
+        }
+        &__holistic{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 6rem;
+            img{
+                height: 62rem;
+                width:50% ;
+                padding-top: 2rem;
+                object-fit: cover;
+            }
+            &__plan{
+               h1{
+                font-size: 2rem;
+                padding-left: 3rem;
+               }
+               p{
+                font-size: 2rem;
+                font-weight: 100;
+                padding-left: 3rem;
+               }
+            }
+        }
+        &__transform{
+            #path{
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 100;
+                padding-top: 8rem;
+            }
+            img{
+                width: 100%;
+                height:60rem ;
+                object-fit: cover;
+                padding-top: 8rem;
+            }
+        }
+        
+    }
+}
+
+.fear{
+    padding-top: 20rem;
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        p{
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+    .Components{
+        display: flex;
+        justify-content: space-around;
+        .images{
+            img{
+                padding-top: 5rem;
+                width: 45rem;
+                height: 45rem;
+            }
+        }
+        .Assessment{
+            h1{
+                font-weight: 800;
+                padding-right: 10rem;
+               
+            }
+            P{
+                font-weight: 600;
+            }
+        }
+    }
+    .courage{
+        .community{
+            h1{
+                font-weight: 300;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center ;
+        }
+        .toward{
+            img{
+                width: 100%;
+                height: 70%;
+            }
+        }
+    }
+}
+.frustration{
+    padding-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    background-color: $background-color-second;
+    color: $text-color-second;
+    .cognitivee{
+        background-color: $background-color-second;
+        &__main{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+       .cognitive{
+        display: flex;
+        &__text{
+            @include displayFlexCenter;
+            flex-direction: column;
+            padding: 1rem;
+            width: 50%;
+
+        }
+        &__image{
+            width: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+       }
+    }
+}
+.maining{
+    padding-top: 20rem;
+    .main{
+        img{
+            width: 100%;
+            height: 35rem;
+        }
+    }
+    .whether{
+        p{
+            font-size: 3rem;
+            letter-spacing: 1px;
+            margin-bottom: 4rem;
+        }
+        
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .photos{
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        
+    }
+}
